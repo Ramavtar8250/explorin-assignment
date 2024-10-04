@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const WorkItem = ({ workItem }) => {
+const WorkItem = ({ workItem ,checkActivity}) => {
+  const [checkWork,setCheckWork]=useState(checkActivity);
+
+  useEffect(()=>{
+    setCheckWork(checkActivity);
+  },[checkActivity])
+
   const handleCheckboxChange = (e) => {
+    setCheckWork(!checkWork);
     if (e.target.checked) {
       console.log("Checked work item:", workItem);
     }
@@ -13,6 +20,7 @@ const WorkItem = ({ workItem }) => {
         <div className="ml-20 flex gap-2 items-center">
           <input
             type="checkbox"
+            checked={checkWork}
             className="h-4 w-4 text-blue-500"
             onChange={handleCheckboxChange} // Attach the handler
           />

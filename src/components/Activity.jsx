@@ -1,13 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import WorkItem from "./WorkItem";
 
-const Activity = ({ activity }) => {
+const Activity = ({ activity ,check}) => {
   const [open, setOpen] = useState(false);
+  const [checkActivity,setCheckActivity]=useState(check);
+
+  useEffect(()=>{
+    setCheckActivity(check);
+  },[check])
 
   if (!activity) return null; // Add safety check for undefined activity
 
   const handleCheckboxChange = (e) => {
+    setCheckActivity(!checkActivity);
     if (e.target.checked) {
       console.log("Checked activity:", activity);
     }
@@ -20,6 +26,7 @@ const Activity = ({ activity }) => {
           <div className="ml-10 flex gap-2 items-center">
             <input
               type="checkbox"
+              checked={checkActivity}
               className="h-4 w-4 text-blue-500"
               onChange={handleCheckboxChange} // Attach the handler
             />
@@ -42,7 +49,7 @@ const Activity = ({ activity }) => {
         Array.isArray(activity.workItems) && // Check if workItems is an array
         activity.workItems.length > 0 && ( // Check if it has items
           activity.workItems.map((workItem, i) => (
-            <WorkItem workItem={workItem} key={i} />
+            <WorkItem workItem={workItem} checkActivity={checkActivity} key={i} />
           ))
         )}
     </>

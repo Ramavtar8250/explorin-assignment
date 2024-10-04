@@ -3,11 +3,14 @@ import { GoPlus } from "react-icons/go";
 import { FiMinus } from "react-icons/fi";
 import Activity from "./Activity";
 
-const Details = ({ entry }) => {
+const Details = ({ entry ,isChecked}) => {
   const [open, setOpen] = useState(false);
+  const [check,setCheck] = useState(isChecked);
+
 
   // Function to handle checkbox changes
   const handleCheckboxChange = (e) => {
+    setCheck(!check)
     if (e.target.checked) {
       console.log("Checked entry:", entry);
     }
@@ -19,6 +22,7 @@ const Details = ({ entry }) => {
         <div className="flex items-center space-x-2 w-2/4">
           <input
             type="checkbox"
+            checked={check}
             className="h-4 w-4 text-blue-500"
             onChange={handleCheckboxChange} // Attach the handler here
           />
@@ -41,7 +45,7 @@ const Details = ({ entry }) => {
         entry.activities &&
         entry.activities.length > 0 &&
         entry.activities.map((activity, i) => (
-          <Activity activity={activity} key={i} />
+          <Activity activity={activity} check={check} key={i} />
         ))}
     </>
   );

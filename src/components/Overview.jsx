@@ -47,7 +47,7 @@ const Overview = () => {
 
       {/* Additional example row for multiple entries */}
       {entries.map((entry, i) => (
-        <Details key={i} entry={entry} />
+        <Details key={i} entry={entry} isChecked={isChecked}/>
       ))}
     </div>
   );
