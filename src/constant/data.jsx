@@ -46,13 +46,39 @@ export const entries = [
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
       {
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
     ],
   },
@@ -103,13 +129,39 @@ export const entries = [
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
       {
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
     ],
   },
@@ -160,13 +212,39 @@ export const entries = [
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
       {
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
     ],
   },
@@ -217,13 +295,39 @@ export const entries = [
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
       {
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
     ],
   },
@@ -274,13 +378,39 @@ export const entries = [
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
       {
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [],
+        workItems: [
+          {
+            name: "Work Item 1",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 2",
+            total: 2986792,
+          },
+          {
+            name: "Work Item 3",
+            total: 2986792,
+          },
+        ],
       },
     ],
   },

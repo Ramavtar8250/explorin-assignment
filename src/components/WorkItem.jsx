@@ -20,7 +20,7 @@ const WorkItem = ({ workItem ,checkActivity}) => {
         <div className="ml-20 flex gap-2 items-center">
           <input
             type="checkbox"
-            checked={checkWork}
+            checked={ checkActivity ?checkActivity:checkWork}
             className="h-4 w-4 text-blue-500"
             onChange={handleCheckboxChange} // Attach the handler
           />

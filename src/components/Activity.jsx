@@ -13,7 +13,10 @@ const Activity = ({ activity ,check}) => {
   if (!activity) return null; // Add safety check for undefined activity
 
   const handleCheckboxChange = (e) => {
-    setCheckActivity(!checkActivity);
+    if(!check){
+      setCheckActivity(!checkActivity);
+    }
+    
     if (e.target.checked) {
       console.log("Checked activity:", activity);
     }
@@ -26,7 +29,7 @@ const Activity = ({ activity ,check}) => {
           <div className="ml-10 flex gap-2 items-center">
             <input
               type="checkbox"
-              checked={checkActivity}
+              checked={check ? check:checkActivity}
               className="h-4 w-4 text-blue-500"
               onChange={handleCheckboxChange} // Attach the handler
             />
@@ -49,7 +52,7 @@ const Activity = ({ activity ,check}) => {
         Array.isArray(activity.workItems) && // Check if workItems is an array
         activity.workItems.length > 0 && ( // Check if it has items
           activity.workItems.map((workItem, i) => (
-            <WorkItem workItem={workItem} checkActivity={checkActivity} key={i} />
+            <WorkItem workItem={workItem} checkActivity={checkActivity} check={check} key={i} />
           ))
         )}
     </>
