@@ -1,19 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GoPlus } from "react-icons/go";
 import { FiMinus } from "react-icons/fi";
 import Activity from "./Activity";
 
-const Details = ({ entry ,isChecked}) => {
+const Details = ({ entry, isChecked }) => {
   const [open, setOpen] = useState(false);
-  const [check,setCheck] = useState(isChecked);
+  const [check, setCheck] = useState(isChecked);
+  const [activityChecks, setActivityChecks] = useState({});
 
+  useEffect(() => {
+    // Check if all activities are checked to update the details checkbox
+    const allChecked = entry.activities.every((activity) => activityChecks[activity.id]);
+    setCheck(allChecked);
+  }, [activityChecks, entry.activities]);
 
-  // Function to handle checkbox changes
   const handleCheckboxChange = (e) => {
-    setCheck(!check)
-    if (e.target.checked) {
-      console.log("Checked entry:", entry);
-    }
+    const checked = e.target.checked;
+    setCheck(checked);
+
+    // Update all activity checks based on details checkbox state
+    const updatedActivityChecks = {};
+    entry.activities.forEach((activity) => {
+      updatedActivityChecks[activity.id] = checked;
+    });
+    setActivityChecks(updatedActivityChecks);
+  };
+
+  const handleActivityChange = (id, checked) => {
+    setActivityChecks((prev) => ({
+      ...prev,
+      [id]: checked,
+    }));
   };
 
   return (
@@ -24,7 +41,7 @@ const Details = ({ entry ,isChecked}) => {
             type="checkbox"
             checked={check}
             className="h-4 w-4 text-blue-500"
-            onChange={handleCheckboxChange} // Attach the handler here
+            onChange={handleCheckboxChange}
           />
           <p className="text-gray-700">{entry?.name}</p>
         </div>
@@ -33,9 +50,7 @@ const Details = ({ entry ,isChecked}) => {
           <div>{entry.total}</div>
           <div
             className="text-5xl text-sky-200 cursor-pointer"
-            onClick={() => {
-              setOpen(!open);
-            }}
+            onClick={() => setOpen(!open)}
           >
             {open ? <FiMinus /> : <GoPlus />}
           </div>
@@ -45,7 +60,12 @@ const Details = ({ entry ,isChecked}) => {
         entry.activities &&
         entry.activities.length > 0 &&
         entry.activities.map((activity, i) => (
-          <Activity activity={activity} check={check} key={i} />
+          <Activity
+            key={activity.id}
+            activity={activity}
+            check={activityChecks[activity.id] || false}
+            onActivityChange={handleActivityChange}
+          />
         ))}
     </>
   );

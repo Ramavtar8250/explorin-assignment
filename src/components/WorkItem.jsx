@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-const WorkItem = ({ workItem ,checkActivity}) => {
-  const [checkWork,setCheckWork]=useState(checkActivity);
+const WorkItem = ({ workItem, checkActivity, onWorkItemChange }) => {
+  const [checkWork, setCheckWork] = useState(checkActivity);
 
-  useEffect(()=>{
+  useEffect(() => {
     setCheckWork(checkActivity);
-  },[checkActivity])
+  }, [checkActivity]);
 
   const handleCheckboxChange = (e) => {
-    setCheckWork(!checkWork);
-    if (e.target.checked) {
+    const checked = e.target.checked;
+    setCheckWork(checked);
+    onWorkItemChange(workItem.id, checked); // Notify the parent about the change
+    if (checked) {
       console.log("Checked work item:", workItem);
     }
   };
@@ -20,9 +22,9 @@ const WorkItem = ({ workItem ,checkActivity}) => {
         <div className="ml-20 flex gap-2 items-center">
           <input
             type="checkbox"
-            checked={ checkActivity ?checkActivity:checkWork}
+            checked={checkWork}
             className="h-4 w-4 text-blue-500"
-            onChange={handleCheckboxChange} // Attach the handler
+            onChange={handleCheckboxChange}
           />
           <p className="text-gray-700">{workItem.name}</p>
         </div>

@@ -1,417 +1,223 @@
 export const entries = [
   {
+    id: 1,
     name: "Civil 1",
     rate: 567.8,
     total: 2986792,
     activities: [
       {
+        id: 1,
         name: "Activity 1",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 1, name: "Work Item 1", total: 2986792 },
+          { id: 2, name: "Work Item 2", total: 2986792 },
+          { id: 3, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 2,
         name: "Activity 2",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 4, name: "Work Item 1", total: 2986792 },
+          { id: 5, name: "Work Item 2", total: 2986792 },
+          { id: 6, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 3,
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
       {
+        id: 4,
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
     ],
   },
   {
+    id: 2,
     name: "Civil 2",
     rate: 567.8,
     total: 2986792,
     activities: [
       {
+        id: 5,
         name: "Activity 1",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 7, name: "Work Item 1", total: 2986792 },
+          { id: 8, name: "Work Item 2", total: 2986792 },
+          { id: 9, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 6,
         name: "Activity 2",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 10, name: "Work Item 1", total: 2986792 },
+          { id: 11, name: "Work Item 2", total: 2986792 },
+          { id: 12, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 7,
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
       {
+        id: 8,
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
     ],
   },
   {
+    id: 3,
     name: "Civil 3",
     rate: 567.8,
     total: 2986792,
     activities: [
       {
+        id: 9,
         name: "Activity 1",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 13, name: "Work Item 1", total: 2986792 },
+          { id: 14, name: "Work Item 2", total: 2986792 },
+          { id: 15, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 10,
         name: "Activity 2",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 16, name: "Work Item 1", total: 2986792 },
+          { id: 17, name: "Work Item 2", total: 2986792 },
+          { id: 18, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 11,
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
       {
+        id: 12,
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
     ],
   },
   {
+    id: 4,
     name: "Civil 4",
     rate: 567.8,
     total: 2986792,
     activities: [
       {
+        id: 13,
         name: "Activity 1",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 19, name: "Work Item 1", total: 2986792 },
+          { id: 20, name: "Work Item 2", total: 2986792 },
+          { id: 21, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 14,
         name: "Activity 2",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 22, name: "Work Item 1", total: 2986792 },
+          { id: 23, name: "Work Item 2", total: 2986792 },
+          { id: 24, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 15,
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
       {
+        id: 16,
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
     ],
   },
   {
+    id: 5,
     name: "Civil 5",
     rate: 567.8,
     total: 2986792,
     activities: [
       {
+        id: 17,
         name: "Activity 1",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 25, name: "Work Item 1", total: 2986792 },
+          { id: 26, name: "Work Item 2", total: 2986792 },
+          { id: 27, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 18,
         name: "Activity 2",
         rate: 567.8,
         total: 2986792,
         workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
+          { id: 28, name: "Work Item 1", total: 2986792 },
+          { id: 29, name: "Work Item 2", total: 2986792 },
+          { id: 30, name: "Work Item 3", total: 2986792 },
         ],
       },
       {
+        id: 19,
         name: "Activity 3",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
       {
+        id: 20,
         name: "Activity 4",
         rate: 567.8,
         total: 2986792,
-        workItems: [
-          {
-            name: "Work Item 1",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 2",
-            total: 2986792,
-          },
-          {
-            name: "Work Item 3",
-            total: 2986792,
-          },
-        ],
+        workItems: [],
       },
     ],
   },
 ];
+
